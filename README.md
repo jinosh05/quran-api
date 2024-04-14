@@ -118,7 +118,6 @@ I might have mistakenly added a few of them. In case you find any translation wh
 ### Demo:
 Projects using Quran API:
 - [Quran](https://fawazahmed0.github.io/quran)
-- [AskGod](https://fawazahmed0.github.io/askgod)
 - [Quran Recitation Videos](https://github.com/fawazahmed0/quran-videos)
 - [Quran Verse Detection](https://github.com/fawazahmed0/quran-verse-detection)
 - [Quran Hadith Search Engine](https://fawazahmed0.github.io/quran-hadith-search/)
