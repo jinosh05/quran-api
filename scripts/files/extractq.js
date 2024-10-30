@@ -4,8 +4,8 @@ const fs = require('fs/promises')
 const fsSync = require('fs')
 const path = require('path')
 
-let zipFilesPath = path.join(__dirname, 'down')
-let pathToSave = path.join(__dirname, 'downextract')
+let zipFilesPath = path.join(__dirname, 'qcomplex audios')
+let pathToSave = path.join(__dirname, 'qextract')
 
 // Returns files path in Array
 async function extractWith7zip(pathToZip, pathToSave, password) {
@@ -16,6 +16,6 @@ async function extractWith7zip(pathToZip, pathToSave, password) {
 
 async function begin() {
     for (let zipFile of (await fs.readdir(zipFilesPath)))
-        await extractWith7zip(path.join(zipFilesPath, zipFile), path.join(pathToSave, zipFile.replace(/_\d+.*?$/gi, "")))
+        await extractWith7zip(path.join(zipFilesPath, zipFile), path.join(pathToSave, zipFile.replace(/\..*?$/gi, "") ))
 }
 begin()
