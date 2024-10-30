@@ -1,3 +1,4 @@
+// push to huggingface via  Dataset.from_pandas(df).push_to_hub("user/reponame", token="",max_shard_size="100GB")
 
 const fs = require('fs/promises')
 const fsSync = require('fs')
